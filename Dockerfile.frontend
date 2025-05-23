@@ -1,0 +1,13 @@
+FROM nginx:alpine
+
+#removing the default nginx index.html file
+RUN rm /usr/share/nginx/html/index.html
+
+#Copying frontend files to directory
+
+COPY index.html /usr/share/nginx/html/
+COPY script.js /usr/share/nginx/html/
+COPY images/ /usr/share/nginx/html/images
+
+#Exposing default port
+EXPOSE 80

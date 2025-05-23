@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Brian Tumor Detection</title>
+    </head>
+    <body style="background-color: black; color: aliceblue;">
+        <h1>Brain Tumor Detection</h1>
+        <hr>
+        <p>This webiste helps determine whether a person has a BrainTumor</p>
+        <p>Please upload an MRI scan image and press the Predict button</p>
+        <br>
+        <img src="images/zerotwo.jpg" height="250" width="250">
+        <br>
+        <label>Input MRI scan image :</label>
+        <input type="file" id="imageInput" accept="image/*">
+        <br>
+        <br>
+        <br>
+        <button style="background-color: tomato; color: aliceblue; padding: 10px 25px; font-size: 15px;" id="predictButton">Predict</button>
+        <div id="resultArea">
+            <p id="predictionText"></p>
+            <img id="resultImage" src="" alt="" style="display: none;" height="200" width="200"> 
+        </div>
+        <script src="script.js"></script>
+    </body>
+</html>
